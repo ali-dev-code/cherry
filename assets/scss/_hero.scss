@@ -1,0 +1,90 @@
+/*--------------------------------------------------------------
+# hero-area
+--------------------------------------------------------------*/
+.hero-area {
+	padding-top: 180px;
+	padding-bottom: 80px;
+	background: linear-gradient(
+			200.52deg,
+			rgba(0, 105, 55, 0.2) 2.35%,
+			rgba(0, 0, 0, 0) 47.5%,
+			rgba(0, 0, 0, 0) 47.5%
+		),
+		linear-gradient(
+			180deg,
+			rgba(46, 52, 70, 0) 43.18%,
+			rgba(0, 0, 0, 0.66) 95.74%
+		),
+		linear-gradient(48.38deg, #344674 28.74%, rgba(0, 0, 0, 0) 101.88%);
+    min-height: 100vh;
+		display: flex;
+		align-items: center;
+	@media only screen and (max-width: 767px) {
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+	}
+	@media only screen and (max-width: 1199px) {
+		padding-top: 140px;
+	}
+	@media only screen and (max-width: 991px) {
+		padding-top: 120px;
+		padding-bottom: 60px;
+	}
+	@media only screen and (max-width: 767px) {
+		padding-top: 100px;
+		padding-bottom: 40px;
+		padding: 0;
+	}
+	.container {
+		max-width: 1200px;
+	}
+	.hero-texts {
+		@media only screen and (max-width: 991px) {
+			text-align: center;
+			max-width: 500px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		h1 {
+			font-size: 53px;
+			color: var(--title-color);
+			margin-bottom: 30px;
+			@media only screen and (max-width: 1199px) {
+				font-size: 46px;
+				margin-bottom: 20px;
+			}
+			@media only screen and (max-width: 991px) {
+				font-size: 40px;
+			}
+			@media only screen and (max-width: 767px) {
+				font-size: 35px;
+				margin-bottom: 15px;
+			}
+			@media only screen and (max-width: 482px) {
+				font-size: 30px;
+			}
+		}
+
+		p {
+			margin-bottom: 36px;
+			@media only screen and (max-width: 1199px) {
+				margin-bottom: 26px;
+			}
+			@media only screen and (max-width: 767px) {
+				font-size: 14px;
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.hero-img {
+		@media only screen and (max-width: 991px) {
+			display: none;
+		}
+		img {
+			width: 100%;
+			max-width: 262px;
+		}
+	}
+}

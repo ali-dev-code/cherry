@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------
+# btn-main
+--------------------------------------------------------------*/
+
+.btn-main {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: 600;
+	color: var(--title-color);
+	background: linear-gradient(
+		94.26deg,
+		#121726 -35.67%,
+		rgba(23, 30, 46, 0.71) 121.76%
+	);
+	padding: 9px 26px;
+	border: 1px solid #95af37;
+	border-radius: 10px;
+  box-shadow: 0px 0px 16px rgba(255, 255, 255, 0.16);
+  transition: all .2s ease-in;
+  &:hover{
+    background-color: var(--primary-color);
+    color: var(--title-color);
+  }
+
+}
