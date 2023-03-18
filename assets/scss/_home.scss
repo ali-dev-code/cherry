@@ -289,7 +289,6 @@
 		svg {
 			margin-top: 35px;
 			height: 32px;
-			fill: var(--title-color);
       fill: url(#paint0_linear_624_2630);
 			@media only screen and (max-width: 1199px) {
 				margin-top: 25px;
@@ -299,6 +298,15 @@
 				height: 30px;
 			}
 		}
+
+    #paint0_linear_624_2630 stop:nth-child(1) {
+      stop-color: white;
+    }
+
+    #paint0_linear_624_2630 stop:nth-child(2) {
+      stop-opacity: 0;
+    }
+
 	}
 }
 .case-single {
@@ -644,9 +652,16 @@
     .sec-t {
       svg {
 
-        fill: var(--title-color);
-        // fill: url(#paint0_linear_624_2630);
+
       }
+      #paint0_linear_624_2630 stop:nth-child(1) {
+        stop-color: black;
+      }
+
+      #paint0_linear_624_2630 stop:nth-child(2) {
+        stop-opacity: 0;
+      }
+
     }
   }
 

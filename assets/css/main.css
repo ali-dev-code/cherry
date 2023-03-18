@@ -272,6 +272,11 @@ h6 a {
 #theme-toggle img {
   height: 25px;
 }
+@media only screen and (max-width: 767px) {
+  #theme-toggle img {
+    height: 24px;
+  }
+}
 
 /*--------------------------------------------------------------
 # btn-main
@@ -1109,7 +1114,6 @@ h6 a {
 .use-case .sec-t svg {
   margin-top: 35px;
   height: 32px;
-  fill: var(--title-color);
   fill: url(#paint0_linear_624_2630);
 }
 @media only screen and (max-width: 1199px) {
@@ -1122,6 +1126,12 @@ h6 a {
     margin-top: 20px;
     height: 30px;
   }
+}
+.use-case .sec-t #paint0_linear_624_2630 stop:nth-child(1) {
+  stop-color: white;
+}
+.use-case .sec-t #paint0_linear_624_2630 stop:nth-child(2) {
+  stop-opacity: 0;
 }
 
 .case-single {
@@ -1468,8 +1478,11 @@ h6 a {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
 }
-[data-theme=light] .use-case .sec-t svg {
-  fill: var(--title-color);
+[data-theme=light] .use-case .sec-t #paint0_linear_624_2630 stop:nth-child(1) {
+  stop-color: black;
+}
+[data-theme=light] .use-case .sec-t #paint0_linear_624_2630 stop:nth-child(2) {
+  stop-opacity: 0;
 }
 [data-theme=light] .case-single {
   background: #FFFFFF;
