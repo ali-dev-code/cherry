@@ -286,10 +286,11 @@
 				font-size: 30px;
 			}
 		}
-		img {
+		svg {
 			margin-top: 35px;
 			height: 32px;
 			fill: var(--title-color);
+      fill: url(#paint0_linear_624_2630);
 			@media only screen and (max-width: 1199px) {
 				margin-top: 25px;
 			}
@@ -318,7 +319,7 @@
 	}
 	@media only screen and (max-width: 482px) {
 		padding: 20px 20px;
-    border-radius: 30px;
+		border-radius: 30px;
 	}
 	.case-logo {
 		width: 100%;
@@ -371,20 +372,22 @@
 		}
 	}
 
-  transition: all .2s ease-in;
-  &:hover{
-    transform: scale(1.01);
-  }
-
+	transition: all 0.2s ease-in;
+	&:hover {
+		transform: scale(1.01);
+	}
 }
-
 
 /*--------------------------------------------------------------
 # team
 --------------------------------------------------------------*/
-.team{
-  background: linear-gradient(98.22deg, rgba(0, 0, 0, 0.43) -6.93%, rgba(0, 0, 0, 0.2064) 102.08%);
-  padding: 90px 0px;
+.team {
+	background: linear-gradient(
+		98.22deg,
+		rgba(0, 0, 0, 0.43) -6.93%,
+		rgba(0, 0, 0, 0.2064) 102.08%
+	);
+	padding: 90px 0px;
 	@media only screen and (max-width: 991px) {
 		padding: 80px 0px;
 	}
@@ -420,96 +423,269 @@
 				font-size: 30px;
 			}
 		}
-
 	}
 }
 
-.team-single{
-  background: radial-gradient(50% 50% at 50% 50%, #16213C 0%, rgba(22, 33, 60, 0.55) 100%);
-border-radius: 50px;
-display: block;
-width: 100%;
-text-decoration: none;
-height: 100%;
-text-align: center;
-padding: 30px 10px;
-display: flex;
-align-items: center;
-justify-content: center;
-@media only screen and (max-width: 991px) {
-min-height: 170px;
-  padding: 20px 10px;
-}
-@media only screen and (max-width: 482px) {
- min-height: 140px;
+.team-single {
+	background: radial-gradient(
+		50% 50% at 50% 50%,
+		#16213c 0%,
+		rgba(22, 33, 60, 0.55) 100%
+	);
+	border-radius: 50px;
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	height: 100%;
+	text-align: center;
+	padding: 30px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	@media only screen and (max-width: 991px) {
+		min-height: 170px;
+		padding: 20px 10px;
+	}
+	@media only screen and (max-width: 482px) {
+		min-height: 140px;
+	}
+
+	svg {
+		vertical-align: middle;
+		fill: var(--title-color);
+	}
+	&.one {
+		svg {
+			width: 350px;
+			height: 150px;
+			object-fit: contain;
+			vertical-align: middle;
+			@media only screen and (max-width: 991px) {
+				width: 100%;
+				height: 130px;
+				object-fit: contain;
+			}
+			@media only screen and (max-width: 482px) {
+				height: 110px;
+			}
+		}
+	}
+
+	&.two {
+		svg {
+			width: 271px;
+			height: 38px;
+			object-fit: contain;
+			vertical-align: middle;
+			@media only screen and (max-width: 1199px) {
+				width: 251px;
+				height: 33px;
+			}
+			@media only screen and (max-width: 991px) {
+				width: 100%;
+				height: 40px;
+				object-fit: contain;
+			}
+			@media only screen and (max-width: 482px) {
+				height: 30px;
+			}
+		}
+	}
+
+	&.three {
+		svg {
+			width: 273px;
+			height: 83px;
+			object-fit: contain;
+			vertical-align: middle;
+			@media only screen and (max-width: 1199px) {
+				width: 261px;
+				height: 63px;
+			}
+			@media only screen and (max-width: 991px) {
+				width: 100%;
+				height: 80px;
+				object-fit: contain;
+			}
+			@media only screen and (max-width: 482px) {
+				height: 70px;
+			}
+		}
+	}
+	transition: all 0.3s ease-in;
+	&:hover {
+		transform: translateY(-4px);
+	}
 }
 
-svg{
-  vertical-align: middle;
-  fill: var(--title-color);
-}
-&.one{
-  svg{
-    width: 350px;
-    height: 150px;
-    object-fit: contain;
-    vertical-align: middle;
-    @media only screen and (max-width: 991px) {
-      width: 100%;
-      height: 130px;
-      object-fit: contain;
+/*--------------------------------------------------------------
+# Light theme
+--------------------------------------------------------------*/
+[data-theme="light"] {
+	body {
+		background: linear-gradient(
+				156.91deg,
+				rgba(12, 147, 71, 0.5) -0.79%,
+				rgba(240, 163, 182, 0) 21.29%
+			),
+			linear-gradient(
+				179.99deg,
+				rgba(251, 252, 255, 0) 14.27%,
+				#ffffff 26.88%
+			),
+			linear-gradient(40.71deg, #fcddec 53.64%, #de4e67 142.82%);
+
+		background-color: #fff;
+	}
+
+
+  .navbar {
+    .navbar-nav {
+
+      &.btn-nav {
+        .nav-item {
+
+          a {
+            display: inline-flex;
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--title-color);
+            background: linear-gradient(
+              94.26deg,
+              rgba(232, 74, 74, 0.3) -35.67%,
+              rgba(93, 126, 201, 0.213) 121.76%
+            );
+            padding: 6px 24px;
+          	border: 1px solid #000000;
+            border-radius: 10px;
+            &:hover {
+              background-color: var(--primary-color);
+              color: var(--title-color);
+            }
+          }
+        }
+      }
     }
-    @media only screen and (max-width: 482px) {
-     height: 110px;
+
+
+
+
+  }
+
+
+	.btn-main {
+		background: linear-gradient(
+			94.26deg,
+			rgba(232, 74, 74, 0.3) -35.67%,
+			rgba(93, 126, 201, 0.213) 121.76%
+		);
+		border: 1px solid #000000;
+		box-shadow: 0px 0px 16px rgba(255, 255, 255, 0.16);
+    &:hover{
+      background-color: var(--primary-color);
+      color: var(--title-color);
+    }
+	}
+	.hero-area {
+		background: transparent;
+	}
+
+  .why-sec{
+    .arrow-link{
+      color: var(--title-color);
+      svg{
+        fill: var(--title-color);
+      }
     }
   }
 
-}
 
-&.two{
-  svg{
-    width: 271px;
-    height: 38px;
-    object-fit: contain;
-    vertical-align: middle;
-    @media only screen and (max-width: 1199px) {
-      width: 251px;
-    height: 33px;
+  .why-single {
+    background: linear-gradient(0deg, rgba(158, 157, 157, 0.2), rgba(158, 157, 157, 0.2)), rgba(255, 255, 255, 0.63);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+
+    .why-body {
+      background: #FFFFFF;
+      box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.1);
     }
-    @media only screen and (max-width: 991px) {
-      width: 100%;
-      height: 40px;
-      object-fit: contain;
-    }
-    @media only screen and (max-width: 482px) {
-      height: 30px;
-     }
+
   }
-}
 
-&.three{
-  svg{
-    width: 273px;
-    height: 83px;
-    object-fit: contain;
-    vertical-align: middle;
-    @media only screen and (max-width: 1199px) {
-      width: 261px;
-    height: 63px;
+
+  //map
+
+  .roadmap{
+    background: rgba(158, 157, 157, 0.2);
+    .click-tab {
+
+      background-color: #1b2336;
+      span {
+        color: #fff;
+      }
+      svg {
+        height: 8px;
+        fill: #fff;
+        margin: 0px 10px;
+      }
+      transition: all 0.2s ease-in;
+      &:hover {
+        transform: scale(1.01);
+      }
     }
-    @media only screen and (max-width: 991px) {
-      width: 100%;
-      height: 80px;
-      object-fit: contain;
-    }
-    @media only screen and (max-width: 482px) {
-      height: 70px;
-     }
   }
-}
-transition: all .3s ease-in;
-&:hover{
-  transform: translateY(-4px);
-}
 
-}
+
+  //case
+
+
+  .use-case {
+
+
+    .sec-t {
+      svg {
+
+        fill: var(--title-color);
+        // fill: url(#paint0_linear_624_2630);
+      }
+    }
+  }
+
+  .case-single {
+
+    background: #FFFFFF;
+    // filter: drop-shadow(0px 0px 66.1095px rgba(0, 0, 0, 0.16));
+    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.22);
+  }
+
+
+  //team
+
+  .team{
+    background: rgba(158, 157, 157, 0.2);
+  }
+
+  .team-single {
+    background: #FFFFFF;
+    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
+  }
+
+
+
+  //footer
+
+  .main-footer{
+    background: linear-gradient(86.36deg, #84FFC2 -79.85%, #EDA4D1 97.26%);
+
+
+    .footer-links {
+
+      ul {
+        a {
+
+          color: #000;
+        }
+      }
+    }
+  }
+
+} /* end  */

@@ -9,7 +9,10 @@
 	z-index: 99;
 	transition: all 0.3s ease-out 0s;
 	.container {
-		max-width: 1500px;
+    /** Large devices (desktops, 992px and up) **/
+    @media (min-width: 992px) {
+      max-width: 1500px;
+    }
 	}
 }
 
@@ -33,7 +36,8 @@
 	.navbar-brand {
 		padding: 0;
 		text-decoration: none;
-		img {
+		svg {
+      fill: var(--title-color);
 			height: 29px;
 			transition: all 0.4s ease-in-out;
 			@media only screen and (max-width: 767px) {
@@ -67,13 +71,13 @@
 			a {
 				text-decoration: none;
 				font-size: 14px;
-				color: #fff;
+				color: var(--title-color);
 				transition: all 0.3s ease-out 0s;
 				padding: 10px 0;
 				position: relative;
 				font-weight: 600;
 				@media only screen and (max-width: 991px) {
-					color: #fff;
+          color: var(--title-color);
 				}
 				&:hover,
 				&.active {
@@ -301,4 +305,9 @@
 		-webkit-transform: translateY(1rem);
 		-webkit-opacity: 0;
 	}
+}
+
+
+[data-theme="light"] {
+
 }
