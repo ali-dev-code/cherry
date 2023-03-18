@@ -112,7 +112,7 @@ h6 a {
 .scroll-top {
   width: 35px;
   height: 35px;
-  background-color: var(--primary-color);
+  background-color: #C1272D;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -679,6 +679,12 @@ h6 a {
     padding: 0;
   }
 }
+@media only screen and (max-width: 482px) {
+  .hero-area {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .hero-area .container {
   max-width: 1200px;
 }
@@ -764,6 +770,12 @@ h6 a {
     padding-bottom: 60px;
   }
 }
+@media only screen and (max-width: 482px) {
+  .why-sec {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 @media (min-width: 1200px) {
   .why-sec .container {
     max-width: 1250px;
@@ -800,6 +812,16 @@ h6 a {
 @media only screen and (max-width: 767px) {
   .why-sec .sec-t h2 {
     font-size: 32px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .why-sec .sec-t h2 {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .why-sec .sec-t p {
+    font-size: 14px;
   }
 }
 .why-sec .arrow-link {
@@ -856,6 +878,11 @@ h6 a {
     text-align: center;
   }
 }
+@media only screen and (max-width: 482px) {
+  .why-single {
+    max-width: 300px;
+  }
+}
 .why-single .why-head {
   padding: 40px 40px;
 }
@@ -883,6 +910,16 @@ h6 a {
 @media only screen and (max-width: 767px) {
   .why-single .why-head h3 {
     font-size: 21px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .why-single .why-head h3 {
+    font-size: 19px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .why-single .why-head p {
+    font-size: 14px;
   }
 }
 .why-single .head-inner {
@@ -945,6 +982,12 @@ h6 a {
 @media only screen and (max-width: 767px) {
   .roadmap {
     padding: 60px 0px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .roadmap {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 .roadmap .map-txt h2 {
@@ -1071,6 +1114,12 @@ h6 a {
 @media only screen and (max-width: 767px) {
   .use-case {
     padding: 50px 0px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .use-case {
+    padding-left: 7px;
+    padding-right: 7px;
   }
 }
 .use-case .container {
@@ -1253,6 +1302,12 @@ h6 a {
     padding: 50px 0px;
   }
 }
+@media only screen and (max-width: 482px) {
+  .team {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .team .container {
   /**Extra large devices (large desktops, 1200px and up) **/
 }
@@ -1322,6 +1377,9 @@ h6 a {
 @media only screen and (max-width: 482px) {
   .team-single {
     min-height: 140px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .team-single svg {
@@ -1523,6 +1581,12 @@ h6 a {
 @media only screen and (max-width: 767px) {
   .main-footer {
     padding: 30px 0px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .main-footer {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 .main-footer .footer-logo-w {

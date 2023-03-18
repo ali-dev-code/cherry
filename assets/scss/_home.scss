@@ -14,6 +14,10 @@
 		padding-top: 30px;
 		padding-bottom: 60px;
 	}
+  @media only screen and (max-width: 482px) {
+    padding-left: 15px;
+    padding-right: 15px;
+   }
 	.container {
 		@media (min-width: 1200px) {
 			max-width: 1250px;
@@ -42,7 +46,15 @@
 			@media only screen and (max-width: 767px) {
 				font-size: 32px;
 			}
+      @media only screen and (max-width: 482px) {
+       font-size: 28px;
+      }
 		}
+    p{
+      @media only screen and (max-width: 482px) {
+        font-size: 14px;
+       }
+    }
 	}
 	.arrow-link {
 		display: inline-flex;
@@ -89,6 +101,9 @@
 		margin-right: auto;
 		text-align: center;
 	}
+  @media only screen and (max-width: 482px) {
+    max-width: 300px;
+   }
 
 	.why-head {
 		padding: 40px 40px;
@@ -98,6 +113,7 @@
 		@media only screen and (max-width: 767px) {
 			padding: 25px 25px;
 		}
+
 		h3 {
 			font-size: 33px;
 			color: var(--title-color);
@@ -109,7 +125,15 @@
 			@media only screen and (max-width: 767px) {
 				font-size: 21px;
 			}
+      @media only screen and (max-width: 482px) {
+       font-size: 19px;
+      }
 		}
+    p{
+      @media only screen and (max-width: 482px) {
+        font-size: 14px;
+       }
+    }
 	}
 	.head-inner {
 		max-width: 369px;
@@ -136,6 +160,7 @@
 				height: 100px;
 			}
 		}
+
 	}
 	transition: all 0.2s ease-in;
 	&:hover {
@@ -158,6 +183,13 @@
 	@media only screen and (max-width: 767px) {
 		padding: 60px 0px;
 	}
+
+  @media only screen and (max-width: 482px) {
+   padding-left: 15px;
+   padding-right: 15px;
+  }
+
+
 	background: linear-gradient(
 		98.22deg,
 		rgba(0, 0, 0, 0.43) -6.93%,
@@ -257,6 +289,12 @@
 	@media only screen and (max-width: 767px) {
 		padding: 50px 0px;
 	}
+
+  @media only screen and (max-width: 482px) {
+    padding-left: 7px;
+    padding-right: 7px;
+   }
+
 
 	.container {
 		/**Extra large devices (large desktops, 1200px and up) **/
@@ -403,6 +441,12 @@
 		padding: 50px 0px;
 	}
 
+  @media only screen and (max-width: 482px) {
+    padding-left: 15px;
+    padding-right: 15px;
+   }
+
+
 	.container {
 		/**Extra large devices (large desktops, 1200px and up) **/
 		@media (min-width: 1200px) {
@@ -456,6 +500,9 @@
 	}
 	@media only screen and (max-width: 482px) {
 		min-height: 140px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
 	}
 
 	svg {
