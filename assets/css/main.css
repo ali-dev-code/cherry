@@ -42,7 +42,7 @@ body {
 }
 
 [data-theme=dark] body {
-  background: linear-gradient(147.8deg, rgba(52, 70, 116, 0.2) -4.56%, rgba(0, 0, 0, 0) 70.35%), #101520;
+  background: linear-gradient(209.75deg, rgba(0, 105, 55, 0.2) -2.17%, rgba(0, 0, 0, 0) 19.68%, rgba(0, 0, 0, 0) 19.68%), linear-gradient(180deg, rgba(46, 52, 70, 0) 6.39%, rgba(0, 0, 0, 0.66) 18.05%), linear-gradient(43.55deg, #344674 50.84%, rgba(0, 0, 0, 0) 105.99%);
   background-color: #101520;
 }
 
@@ -112,7 +112,7 @@ h6 a {
 .scroll-top {
   width: 35px;
   height: 35px;
-  background-color: #C1272D;
+  background-color: #c1272d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -641,7 +641,6 @@ h6 a {
 .hero-area {
   padding-top: 180px;
   padding-bottom: 80px;
-  background: linear-gradient(200.52deg, rgba(0, 105, 55, 0.2) 2.35%, rgba(0, 0, 0, 0) 47.5%, rgba(0, 0, 0, 0) 47.5%), linear-gradient(180deg, rgba(46, 52, 70, 0) 43.18%, rgba(0, 0, 0, 0.66) 95.74%), linear-gradient(48.38deg, #344674 28.74%, rgba(0, 0, 0, 0) 101.88%);
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
