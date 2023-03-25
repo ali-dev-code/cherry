@@ -1,0 +1,82 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+
+#hero {
+	width: 100%;
+	height: 90vh;
+	background: linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)),	url(../img/hero-bg.jpg);
+
+	background-position: top center;
+	background-size: cover;
+	margin-bottom: -200px;
+
+  @media only screen and (max-width: 482px) {
+   height: 60vh;
+  margin-top: 40px;
+  }
+
+
+	.container {
+		position: relative;
+	}
+
+	h1 {
+		margin: 0;
+		font-size: 48px;
+		font-weight: 700;
+		line-height: 56px;
+		text-transform: uppercase;
+		color: #fff;
+	}
+
+	h2 {
+		color: #e4e0e0;
+		margin: 10px 0 0 0;
+		font-size: 24px;
+	}
+
+	.btn-get-started {
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size: 14px;
+		letter-spacing: 1px;
+		display: inline-block;
+		padding: 12px 35px;
+		margin-top: 30px;
+		border-radius: 50px;
+		transition: 0.5s;
+		color: #fff;
+		background: $primary-color;
+    &:focus{
+      box-shadow: 0 0 0 0.25rem rgba($primary-color, 0.5);
+    }
+		&:hover {
+		  background: lighten($color: $primary-color, $amount: 10%);
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	#hero {
+		background-attachment: fixed;
+	}
+}
+
+@media (max-width: 992px) {
+	#hero {
+		margin-bottom: 0;
+
+
+		h1 {
+			font-size: 28px;
+			line-height: 36px;
+		}
+
+		h2 {
+			font-size: 18px;
+			line-height: 24px;
+			margin-bottom: 30px;
+		}
+	}
+}
