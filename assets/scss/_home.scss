@@ -14,10 +14,10 @@
 		padding-top: 30px;
 		padding-bottom: 60px;
 	}
-  @media only screen and (max-width: 482px) {
-    padding-left: 15px;
-    padding-right: 15px;
-   }
+	@media only screen and (max-width: 482px) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 	.container {
 		@media (min-width: 1200px) {
 			max-width: 1250px;
@@ -46,15 +46,15 @@
 			@media only screen and (max-width: 767px) {
 				font-size: 32px;
 			}
-      @media only screen and (max-width: 482px) {
-       font-size: 28px;
-      }
+			@media only screen and (max-width: 482px) {
+				font-size: 28px;
+			}
 		}
-    p{
-      @media only screen and (max-width: 482px) {
-        font-size: 14px;
-       }
-    }
+		p {
+			@media only screen and (max-width: 482px) {
+				font-size: 14px;
+			}
+		}
 	}
 	.arrow-link {
 		display: inline-flex;
@@ -101,9 +101,9 @@
 		margin-right: auto;
 		text-align: center;
 	}
-  @media only screen and (max-width: 482px) {
-    max-width: 300px;
-   }
+	@media only screen and (max-width: 482px) {
+		max-width: 300px;
+	}
 
 	.why-head {
 		padding: 40px 40px;
@@ -125,15 +125,15 @@
 			@media only screen and (max-width: 767px) {
 				font-size: 21px;
 			}
-      @media only screen and (max-width: 482px) {
-       font-size: 19px;
-      }
+			@media only screen and (max-width: 482px) {
+				font-size: 19px;
+			}
 		}
-    p{
-      @media only screen and (max-width: 482px) {
-        font-size: 14px;
-       }
-    }
+		p {
+			@media only screen and (max-width: 482px) {
+				font-size: 14px;
+			}
+		}
 	}
 	.head-inner {
 		max-width: 369px;
@@ -160,7 +160,6 @@
 				height: 100px;
 			}
 		}
-
 	}
 	transition: all 0.2s ease-in;
 	&:hover {
@@ -184,11 +183,10 @@
 		padding: 60px 0px;
 	}
 
-  @media only screen and (max-width: 482px) {
-   padding-left: 15px;
-   padding-right: 15px;
-  }
-
+	@media only screen and (max-width: 482px) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 
 	background: linear-gradient(
 		98.22deg,
@@ -290,11 +288,10 @@
 		padding: 50px 0px;
 	}
 
-  @media only screen and (max-width: 482px) {
-    padding-left: 7px;
-    padding-right: 7px;
-   }
-
+	@media only screen and (max-width: 482px) {
+		padding-left: 7px;
+		padding-right: 7px;
+	}
 
 	.container {
 		/**Extra large devices (large desktops, 1200px and up) **/
@@ -327,7 +324,7 @@
 		svg {
 			margin-top: 35px;
 			height: 32px;
-      fill: url(#paint0_linear_624_2630);
+			fill: url(#paint0_linear_624_2630);
 			@media only screen and (max-width: 1199px) {
 				margin-top: 25px;
 			}
@@ -337,14 +334,13 @@
 			}
 		}
 
-    #paint0_linear_624_2630 stop:nth-child(1) {
-      stop-color: white;
-    }
+		#paint0_linear_624_2630 stop:nth-child(1) {
+			stop-color: white;
+		}
 
-    #paint0_linear_624_2630 stop:nth-child(2) {
-      stop-opacity: 0;
-    }
-
+		#paint0_linear_624_2630 stop:nth-child(2) {
+			stop-opacity: 0;
+		}
 	}
 }
 .case-single {
@@ -441,11 +437,10 @@
 		padding: 50px 0px;
 	}
 
-  @media only screen and (max-width: 482px) {
-    padding-left: 15px;
-    padding-right: 15px;
-   }
-
+	@media only screen and (max-width: 482px) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 
 	.container {
 		/**Extra large devices (large desktops, 1200px and up) **/
@@ -500,9 +495,9 @@
 	}
 	@media only screen and (max-width: 482px) {
 		min-height: 140px;
-    max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+		max-width: 300px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	svg {
@@ -589,44 +584,51 @@
 				#ffffff 26.88%
 			),
 			linear-gradient(40.71deg, #fcddec 53.64%, #de4e67 142.82%);
+      background-color: #fff;
 
-		background-color: #fff;
+		@media only screen and (max-width: 767px) {
+			background: linear-gradient(
+					179.9deg,
+					#01ff70 -3.93%,
+					rgba(255, 255, 255, 0.5) 2.19%
+				),
+				linear-gradient(
+					180.15deg,
+					#de4e67 7.63%,
+					#e3667d 11.56%,
+					#fcddec 23.06%
+				),
+				linear-gradient(180deg, #fbfcff 0.22%, #ffffff 100%);
+		}
+
 	}
 
-
-  .navbar {
-    .navbar-nav {
-
-      &.btn-nav {
-        .nav-item {
-
-          a {
-            display: inline-flex;
-            font-size: 15px;
-            font-weight: 500;
-            color: var(--title-color);
-            background: linear-gradient(
-              94.26deg,
-              rgba(232, 74, 74, 0.3) -35.67%,
-              rgba(93, 126, 201, 0.213) 121.76%
-            );
-            padding: 6px 24px;
-          	border: 1px solid #000000;
-            border-radius: 10px;
-            &:hover {
-              background-color: var(--primary-color);
-              color: var(--title-color);
-            }
-          }
-        }
-      }
-    }
-
-
-
-
-  }
-
+	.navbar {
+		.navbar-nav {
+			&.btn-nav {
+				.nav-item {
+					a {
+						display: inline-flex;
+						font-size: 15px;
+						font-weight: 500;
+						color: var(--title-color);
+						background: linear-gradient(
+							94.26deg,
+							rgba(232, 74, 74, 0.3) -35.67%,
+							rgba(93, 126, 201, 0.213) 121.76%
+						);
+						padding: 6px 24px;
+						border: 1px solid #000000;
+						border-radius: 10px;
+						&:hover {
+							background-color: var(--primary-color);
+							color: var(--title-color);
+						}
+					}
+				}
+			}
+		}
+	}
 
 	.btn-main {
 		background: linear-gradient(
@@ -636,118 +638,104 @@
 		);
 		border: 1px solid #000000;
 		box-shadow: 0px 0px 16px rgba(255, 255, 255, 0.16);
-    &:hover{
-      background-color: var(--primary-color);
-      color: var(--title-color);
-    }
+		&:hover {
+			background-color: var(--primary-color);
+			color: var(--title-color);
+		}
 	}
 	.hero-area {
 		background: transparent;
 	}
 
-  .why-sec{
-    .arrow-link{
-      color: var(--title-color);
-      svg{
-        fill: var(--title-color);
-      }
-    }
-  }
+	.why-sec {
+		.arrow-link {
+			color: var(--title-color);
+			svg {
+				fill: var(--title-color);
+			}
+		}
+	}
 
+	.why-single {
+		background: linear-gradient(
+				0deg,
+				rgba(158, 157, 157, 0.2),
+				rgba(158, 157, 157, 0.2)
+			),
+			rgba(255, 255, 255, 0.63);
+		box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
 
-  .why-single {
-    background: linear-gradient(0deg, rgba(158, 157, 157, 0.2), rgba(158, 157, 157, 0.2)), rgba(255, 255, 255, 0.63);
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+		.why-body {
+			background: #ffffff;
+			box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.1);
+		}
+	}
 
-    .why-body {
-      background: #FFFFFF;
-      box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.1);
-    }
+	//map
 
-  }
+	.roadmap {
+		background: rgba(158, 157, 157, 0.2);
+		.click-tab {
+			background-color: #1b2336;
+			span {
+				color: #fff;
+			}
+			svg {
+				height: 8px;
+				fill: #fff;
+				margin: 0px 10px;
+			}
+			transition: all 0.2s ease-in;
+			&:hover {
+				transform: scale(1.01);
+			}
+		}
+	}
 
+	//case
 
-  //map
+	.use-case {
+		.sec-t {
+			svg {
+			}
+			#paint0_linear_624_2630 stop:nth-child(1) {
+				stop-color: black;
+			}
 
-  .roadmap{
-    background: rgba(158, 157, 157, 0.2);
-    .click-tab {
+			#paint0_linear_624_2630 stop:nth-child(2) {
+				stop-opacity: 0;
+			}
+		}
+	}
 
-      background-color: #1b2336;
-      span {
-        color: #fff;
-      }
-      svg {
-        height: 8px;
-        fill: #fff;
-        margin: 0px 10px;
-      }
-      transition: all 0.2s ease-in;
-      &:hover {
-        transform: scale(1.01);
-      }
-    }
-  }
+	.case-single {
+		background: #ffffff;
+		// filter: drop-shadow(0px 0px 66.1095px rgba(0, 0, 0, 0.16));
+		box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.22);
+	}
 
+	//team
 
-  //case
+	.team {
+		background: rgba(158, 157, 157, 0.2);
+	}
 
+	.team-single {
+		background: #ffffff;
+		box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
+	}
 
-  .use-case {
+	//footer
 
+	.main-footer {
+		background: linear-gradient(86.36deg, #84ffc2 -79.85%, #eda4d1 97.26%);
 
-    .sec-t {
-      svg {
-
-
-      }
-      #paint0_linear_624_2630 stop:nth-child(1) {
-        stop-color: black;
-      }
-
-      #paint0_linear_624_2630 stop:nth-child(2) {
-        stop-opacity: 0;
-      }
-
-    }
-  }
-
-  .case-single {
-
-    background: #FFFFFF;
-    // filter: drop-shadow(0px 0px 66.1095px rgba(0, 0, 0, 0.16));
-    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.22);
-  }
-
-
-  //team
-
-  .team{
-    background: rgba(158, 157, 157, 0.2);
-  }
-
-  .team-single {
-    background: #FFFFFF;
-    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
-  }
-
-
-
-  //footer
-
-  .main-footer{
-    background: linear-gradient(86.36deg, #84FFC2 -79.85%, #EDA4D1 97.26%);
-
-
-    .footer-links {
-
-      ul {
-        a {
-
-          color: #000;
-        }
-      }
-    }
-  }
-
+		.footer-links {
+			ul {
+				a {
+					color: #000;
+				}
+			}
+		}
+	}
 } /* end  */

@@ -103,7 +103,7 @@ h1, h2, h3, h4 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: #e7e6e6;
+  background: rgb(231, 230, 230);
   height: 40px;
   font-size: 14px;
   -webkit-transition: all 0.5s;
@@ -375,7 +375,6 @@ h1, h2, h3, h4 {
   .mobile-nav-toggle {
     display: block;
   }
-
   .navbar ul {
     display: none;
   }
@@ -541,8 +540,18 @@ h1, h2, h3, h4 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 70px 0;
   overflow: hidden;
+}
+@media only screen and (max-width: 1199px) {
+  section {
+    padding: 60px 0px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  section {
+    padding: 50px 0px;
+  }
 }
 
 .section-bg {
@@ -768,7 +777,7 @@ section {
   font-weight: 500;
 }
 .about .video-box {
-  background: url("../img/about.jpg") center center no-repeat;
+  background: url("../img/19836.jpg") center center no-repeat;
   background-size: cover;
   min-height: 500px;
 }
@@ -1309,3 +1318,4 @@ section {
     margin-bottom: 15px;
   }
 }
+/*# sourceMappingURL=style.css.map */
